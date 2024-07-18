@@ -95,7 +95,7 @@ def send_email(receiver_email, subject, body, text_attachment_path, image_attach
         return False
 
 def main():
-    st.logo("map.png")
+    
     st.title("Text Encryption and Decryption 💬")
 
     tab_selection = st.sidebar.radio("Select operation:", ["Encryption", "Decryption"])
@@ -156,7 +156,7 @@ def main():
                 st.error(f"Decryption failed: Enter what you got while encrypting")
 
 st.set_page_config(page_title="SecurEncrypt", page_icon="🗺️")
-
+st.logo("map.png")
 config_file = './pages/config.yaml'  
 with open(config_file, 'r') as file:
     config = yaml.load(file, Loader=SafeLoader)
