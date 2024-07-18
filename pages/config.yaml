@@ -1,0 +1,24 @@
+credentials:
+  usernames:
+    vicky:
+      email: hrsvikhyath@gmail.com
+      failed_login_attempts: 0
+      logged_in: False 
+      name: Vikhyath
+      password: shravyavicky131
+    admin:
+      email: admin@gmail.com
+      failed_login_attempts: 0
+      logged_in: False 
+      name: Admin
+      password: admin
+    shravya:
+      email: shravya@gmail.com
+      failed_login_attempts: 0
+      logged_in: False 
+      name: Shravya
+      password: vicky
+cookie:
+  expiry_days: 30
+  key: some_signature_key 
+  name: some_cookie_name
