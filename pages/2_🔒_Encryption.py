@@ -9,7 +9,7 @@ import streamlit_authenticator as stauth
 
 
 def main():
-    st.logo("map.png")
+    
     st.header("Encrypt Image 🔒")
 
     uploaded_file = st.file_uploader("Choose an image file 🖼️", type=["jpg", "jpeg", "png"])
@@ -70,6 +70,7 @@ def main():
             st.error("Please enter a recipient's email address and a subject.")
 
 st.set_page_config(page_title="SecurEncrypt", page_icon="🗺️")
+st.logo("map.png")
 config_file = './pages/config.yaml'  
 with open(config_file, 'r') as file:
     config = yaml.load(file, Loader=SafeLoader)
