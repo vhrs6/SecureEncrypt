@@ -51,7 +51,7 @@ def main():
             st.warning("Enter the decryption key before decrypting the image.")
 
 
-st.set_page_config(page_title="E&D", page_icon="🗺️")
+st.set_page_config(page_title="SecurEncrypt", page_icon="🗺️")
 
 config_file = './pages/config.yaml'  
 with open(config_file, 'r') as file:
