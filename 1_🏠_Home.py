@@ -2,7 +2,7 @@ import streamlit as st
 import yaml
 from yaml.loader import SafeLoader
 import streamlit_authenticator as stauth
-st.set_page_config(page_title="E&D", page_icon="🗺️")
+st.set_page_config(page_title="SecurEncrypt", page_icon="🗺️")
 st.logo("map.png")
 
 
