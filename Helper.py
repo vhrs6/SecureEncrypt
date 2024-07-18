@@ -62,7 +62,9 @@ def create_zip_file(text_file_path, encrypted_image_path):
 def send_email(
     receiver_email, subject, body, text_attachment_path, image_attachment_path
 ):
-    credentials = toml.load('/pages/credentials.toml')
+    
+    
+    credentials = toml.load('./pages/credentials.toml')
     sender_email = credentials['email']['sender_email']
     sender_password = credentials['email']['sender_password']
 
