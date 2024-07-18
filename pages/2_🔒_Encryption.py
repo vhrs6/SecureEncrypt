@@ -69,7 +69,7 @@ def main():
         else:
             st.error("Please enter a recipient's email address and a subject.")
 
-
+st.set_page_config(page_title="SecurEncrypt", page_icon="🗺️")
 config_file = './pages/config.yaml'  
 with open(config_file, 'r') as file:
     config = yaml.load(file, Loader=SafeLoader)
