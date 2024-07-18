@@ -6,7 +6,7 @@ import streamlit_authenticator as stauth
 
 
 def main():
-    st.logo("map.png")
+
 
 
     st.header("Decrypt Image 🔓")
@@ -52,7 +52,7 @@ def main():
 
 
 st.set_page_config(page_title="SecurEncrypt", page_icon="🗺️")
-
+st.logo("map.png")
 config_file = './pages/config.yaml'  
 with open(config_file, 'r') as file:
     config = yaml.load(file, Loader=SafeLoader)
