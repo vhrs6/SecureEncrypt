@@ -16,7 +16,7 @@ def main():
     iv_input = st.text_input("Enter the IV for decryption 🔐")
 
     if iv_input and len(iv_input) != 32:
-        st.error("32")
+        st.error("IV should be a 16-byte hex string.")
     else:
         try:
             iv = bytes.fromhex(iv_input)
