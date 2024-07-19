@@ -57,7 +57,7 @@ def main():
                 text_attachment_path = st.session_state['text_attachment_path']
                 image_attachment_path = st.session_state['image_attachment_path']
                 subject = email_subject
-                body = f"Please find attached the encrypted image and the key for decryption.\n\nSent on {time.strftime('%Y-%m-%d %H:%M:%S')}."
+                body = f"Please find the attached encrypted image and the key for decryption.\n\nSent on {time.strftime('%Y-%m-%d %H:%M:%S')}."
                 st.success("Encryption successful! Sending email...")
                 success = h.send_email(receiver_email, subject, body, text_attachment_path, image_attachment_path)
                 if success:
