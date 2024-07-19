@@ -5,13 +5,13 @@ credentials:
       failed_login_attempts: 0
       logged_in: False 
       name: Vikhyath
-      password: shravyavicky131
+      password: shravyavicky121
     admin:
       email: admin@gmail.com
       failed_login_attempts: 0
       logged_in: False 
-      name: Admin
-      password: admin
+      name: Admins
+      password: admins
     shravya:
       email: shravya@gmail.com
       failed_login_attempts: 0
