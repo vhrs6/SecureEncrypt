@@ -24,7 +24,7 @@ st.logo("map.png")
 # authenticator.login()
 # if st.session_state["authentication_status"]:
 #    authenticator.logout()
-st.write(f'Welcome *{st.session_state["name"]}*')
+st.write(f'Welcome')
 st.title("Encryption and Decryption")
 st.image('gif.gif')
 st.header("Image Encryption and Decryption")
