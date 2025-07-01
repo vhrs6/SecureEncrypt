@@ -51,23 +51,23 @@ def main():
     receiver_email = st.text_input("Enter the recipient's email address 📧")
     email_subject = st.text_input("Enter the subject for the email 📋")
 
-    if st.button("Submit and Send Email 📩"):
-        if receiver_email and email_subject:
-            if 'text_attachment_path' in st.session_state and 'image_attachment_path' in st.session_state:
-                text_attachment_path = st.session_state['text_attachment_path']
-                image_attachment_path = st.session_state['image_attachment_path']
-                subject = email_subject
-                body = f"Please find the attached encrypted image and the key for decryption.\n\nSent on {time.strftime('%Y-%m-%d %H:%M:%S')}."
-                st.success("Encryption successful! Sending email...")
-                success = h.send_email(receiver_email, subject, body, text_attachment_path, image_attachment_path)
-                if success:
-                    st.success(f"Email sent to {receiver_email}!")
-                else:
-                    st.error("Failed to send email. Please try again.")
-            else:
-                st.error("No encrypted file to send. Please encrypt an image first.")
-        else:
-            st.error("Please enter a recipient's email address and a subject.")
+    # if st.button("Submit and Send Email 📩"):
+    #     if receiver_email and email_subject:
+    #         if 'text_attachment_path' in st.session_state and 'image_attachment_path' in st.session_state:
+    #             text_attachment_path = st.session_state['text_attachment_path']
+    #             image_attachment_path = st.session_state['image_attachment_path']
+    #             subject = email_subject
+    #             body = f"Please find the attached encrypted image and the key for decryption.\n\nSent on {time.strftime('%Y-%m-%d %H:%M:%S')}."
+    #             st.success("Encryption successful! Sending email...")
+    #             success = h.send_email(receiver_email, subject, body, text_attachment_path, image_attachment_path)
+    #             if success:
+    #                 st.success(f"Email sent to {receiver_email}!")
+    #             else:
+    #                 st.error("Failed to send email. Please try again.")
+    #         else:
+    #             st.error("No encrypted file to send. Please encrypt an image first.")
+    #     else:
+    #         st.error("Please enter a recipient's email address and a subject.")
 
 st.set_page_config(page_title="SecurEncrypt", page_icon="🗺️")
 st.logo("map.png")
