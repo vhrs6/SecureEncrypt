@@ -48,8 +48,8 @@ def main():
         else:
             st.error("Failed to decode the uploaded image.")
 
-    receiver_email = st.text_input("Enter the recipient's email address 📧")
-    email_subject = st.text_input("Enter the subject for the email 📋")
+    # receiver_email = st.text_input("Enter the recipient's email address 📧")
+    # email_subject = st.text_input("Enter the subject for the email 📋")
 
     # if st.button("Submit and Send Email 📩"):
     #     if receiver_email and email_subject:
