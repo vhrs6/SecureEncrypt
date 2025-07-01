@@ -53,24 +53,24 @@ def main():
 
 st.set_page_config(page_title="SecurEncrypt", page_icon="🗺️")
 st.logo("map.png")
-config_file = './pages/config.yaml'  
-with open(config_file, 'r') as file:
-    config = yaml.load(file, Loader=SafeLoader)
+# config_file = './pages/config.yaml'  
+# with open(config_file, 'r') as file:
+#     config = yaml.load(file, Loader=SafeLoader)
 
-authenticator = stauth.Authenticate(
-    config['credentials'],
-    config['cookie']['name'],
-    config['cookie']['key'],
-    config['cookie']['expiry_days'],
-)
-authenticator.login()
-if st.session_state["authentication_status"]:
-    authenticator.logout()
-    st.write(f'Welcome *{st.session_state["name"]}*')
-    main()
-elif st.session_state["authentication_status"] is False:
-    st.error('Username/password is incorrect')
-elif st.session_state["authentication_status"] is None:
-    st.warning('Please Login To Use ')
+# authenticator = stauth.Authenticate(
+#     config['credentials'],
+#     config['cookie']['name'],
+#     config['cookie']['key'],
+#     config['cookie']['expiry_days'],
+# )
+# authenticator.login()
+# if st.session_state["authentication_status"]:
+#     authenticator.logout()
+#     st.write(f'Welcome *{st.session_state["name"]}*')
+main()
+# elif st.session_state["authentication_status"] is False:
+#     st.error('Username/password is incorrect')
+# elif st.session_state["authentication_status"] is None:
+#     st.warning('Please Login To Use ')
 
 
